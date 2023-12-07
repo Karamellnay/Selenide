@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class DebitCardTest {
     @Test
     void shouldTest() {
-        open("http://0.0.0.0:7777");
+        open("http://localhost:7777");
         SelenideElement form = $("form");
         form.$("[data-test-id=name] input").setValue("Иванов Василий");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
